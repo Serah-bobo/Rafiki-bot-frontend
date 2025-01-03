@@ -1,3 +1,4 @@
+
 import { PaperAirplaneIcon } from '@heroicons/react/20/solid'; // Import paper airplane icon from Heroicons
 
 function InputField({ newMessage, isLoading, setNewMessage, submitNewMessage, isDarkMode }) {
@@ -17,7 +18,7 @@ function InputField({ newMessage, isLoading, setNewMessage, submitNewMessage, is
   }
 
   return (
-    <div className="p-1bg-white py- dark:bg-gray-900">
+    <div className="p-1 bg-white py- dark:bg-gray-900">
       <div className="p-0 font-mono origin-bottom z-250 bg-primary-blue/35 rounded-3xl animate-chat duration-400">
         <div
           className={`pr-0.5 relative shrink-0 rounded-3xl overflow-hidden 
@@ -26,7 +27,7 @@ function InputField({ newMessage, isLoading, setNewMessage, submitNewMessage, is
         >
           <textarea
             className={`block w-full py-2 px-4 pr-11 
-              resize-none rounded-3xl placeholder:text-primary-blue 
+              resize-none rounded-2xl placeholder:text-primary-blue 
               focus:outline-none transition-all 
               ${isDarkMode
                 ? 'bg-gray-800 placeholder:text-gray-400 text-gray-200'
